@@ -10,9 +10,16 @@
   <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
   <script type="text/javascript" type="text/javascript">
     Parse.initialize("DjlEW9hPJKgcNmzulXOgI4LoL0Vs3DhWW5pGwP3F","1PhHPrs1XHgMaiA0eh7m8K9KSJIU6Vtcg57iXi3m"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-    Parse.serverURL = 'https://parseapi.back4app.com/'
+    Parse.serverURL = 'https://parseapi.back4app.com/';
     
-    
+   
+  </script>
+
+  </head>
+  <body>
+    <main>
+      <h1> "Hello World" </h1>
+     <script>  
     async function saveNewPlayer() {
   //Create your Parse Object
   const soccerPlayer = new Parse.Object('SoccerPlayer');
@@ -29,12 +36,7 @@
     alert('Failed to create new object: ' + error.message);
   }
 }
-  </script>
-
-  </head>
-  <body>
-    <main>
-      <h1> "Hello World" </h1>
+      </script>
     </main>
     <script src="sketch.js"></script>
   </body>
